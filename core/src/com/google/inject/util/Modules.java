@@ -30,6 +30,8 @@ public class SpiUtils {
        int expectedMapBindings,
        MapResult<?, ?>... results) {
      if (visitType == null) {
+
+      
        fail("must test something");
      }     if (visitType == BOTH || visitType == INJECTOR) {
        mapInjectorTest(
