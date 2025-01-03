@@ -30,6 +30,8 @@ public class SpiUtils {
        int expectedMapBindings,
        MapResult<?, ?>... results) {
      if (visitType == null) {
+
+      
        fail("must test something");
      }     if (visitType == BOTH || visitType == INJECTOR) {
        mapInjectorTest(
@@ -37,6 +39,7 @@ public class SpiUtils {
      }     if (visitType == BOTH || visitType == MODULE) {
        mapModuleTest(
            mapKey, keyType, valueType, modules, allowDuplicates, expectedMapBindings, results);}}
+ 
   @SuppressWarnings("unchecked")
   private static <T> void mapModuleTest(
       Key<T> mapKey,
