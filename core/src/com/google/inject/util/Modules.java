@@ -304,6 +304,7 @@ public final class Modules {
       // If the sole element was a PrivateElements, we want to override
       // the private elements within that -- so refocus our elements
       // and binder.
+      System.out.println("test");
       if (baseElements.size() == 1) {
         Element element = Iterables.getOnlyElement(baseElements);
         if (element instanceof PrivateElements) {
