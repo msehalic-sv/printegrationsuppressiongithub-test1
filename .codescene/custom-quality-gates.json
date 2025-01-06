@@ -17,12 +17,12 @@
         },
         {
             "quality_gates": {
-                "hotspot_decline": false,
+                "hotspot_decline": true,
                 "critical_health_rules": false,
                 "refactoring_goals": false,
                 "supervise_goals": false,
                 "new_code_health": true,
-                "advisory_health_rules": false,
+                "advisory_health_rules": true,
                 "codeowners_for_critical_code": false
             },
             "quality_gates_doc": "Turn on or off quality gates for matching files.",
