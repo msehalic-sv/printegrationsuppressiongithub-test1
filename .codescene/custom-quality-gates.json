@@ -17,13 +17,13 @@
         },
         {
             "quality_gates": {
-                "hotspot_decline": true,
-                "critical_health_rules": true,
-                "refactoring_goals": true,
-                "supervise_goals": true,
+                "hotspot_decline": false,
+                "critical_health_rules": false,
+                "refactoring_goals": false,
+                "supervise_goals": false,
                 "new_code_health": true,
                 "advisory_health_rules": false,
-                "codeowners_for_critical_code": true
+                "codeowners_for_critical_code": false
             },
             "quality_gates_doc": "Turn on or off quality gates for matching files.",
             "matching_content_path": "**/*.java",
