@@ -3,7 +3,7 @@
     "rule_sets": [
         {
             "quality_gates": {
-                "hotspot_decline": false,
+                "hotspot_decline": true,
                 "critical_health_rules": false,
                 "refactoring_goals": false,
                 "supervise_goals": false,
