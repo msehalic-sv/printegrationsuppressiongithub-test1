@@ -1,0 +1,15 @@
+name: test1
+on:
+  workflow_dispatch:
+jobs:
+    job1:
+      runs-on: ubuntu
+      steps:
+        - name: Upload to Staging
+          run: |
+            echo $CS_ENV
+            CS_ENV=${CS_ENV} echo $CS_ENV
+          env:
+            CS_ENV: staging
+            CS_ACCESS_TOKEN: test
+          shell: bash
