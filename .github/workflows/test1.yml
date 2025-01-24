@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
 jobs:
     job1:
-      runs-on: ubuntu
+      runs-on: ubuntu-latest
       steps:
-        - name: Upload to Staging
+        - name: test variables
           run: |
             echo $CS_ENV
             CS_ENV=${CS_ENV} echo $CS_ENV
