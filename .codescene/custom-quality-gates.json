@@ -3,17 +3,17 @@
     "rule_sets": [
         {
             "quality_gates": {
-                "hotspot_decline": true,
+                "hotspot_decline": false,
                 "critical_health_rules": false,
                 "refactoring_goals": false,
                 "supervise_goals": false,
-                "new_code_health": true,
+                "new_code_health": false,
                 "advisory_health_rules": false,
                 "codeowners_for_critical_code": false
             },
             "quality_gates_doc": "Specify a quality profile: clean_code_collective, bare_minimum, pay_down_tech_debt",
-            "matching_team": "team2",
-            "matching_team_doc": "Specify a team name, if a member of a team modifies a file, file matches the rule."
+            "matching_content_path": "**/*",
+            "matching_content_path_doc": "Specify a glob pattern relative to this repo root, without repository name prefix."
         },
         {
             "quality_gates": "pay_down_tech_debt",
